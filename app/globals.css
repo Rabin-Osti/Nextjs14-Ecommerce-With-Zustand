@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #fb2e86;
+  --text-black: #0d0e43;
+  --text-sub: #0d0e43;
+  --text-primary: #151875;
+  --text-light: #9096b2;
+  --border-light: #c2c5e1;
+  --h1-font-size: 3.2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.outer {
+  max-width: 130rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+.sectionContainer {
+  margin-top: 6rem;
+}
+@media (max-width: 500px) {
+  .sectionContainer {
+    margin-top: 3rem;
+  }
+}
+.primaryColor {
+  color: var(--primary-color);
+}
+@keyframes skeletonLoading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.navSearch {
+  stroke: black;
+  transition: all 0.2s ease-in-out;
+}
+.navSearch:hover {
+  cursor: pointer;
+  stroke: var(--primary-color);
+}
+.hoverEffect {
+  transition: all 0.2s ease-in-out;
+}
+.hoverEffect:hover {
+  cursor: pointer;
+
+  color: var(--primary-color);
+  fill: var(--primary-color);
+}
+.loading-effect {
+  animation: skeletonLoading 1s linear infinite;
+}
+.primary-btn {
+  width: fit-content;
+  height: 4.45rem;
+  padding: 0 2rem;
+  border-radius: 0.4rem;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  transition: all 0.1s ease;
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+  .primary-btn {
+    padding: 1rem 2rem;
+    height: fit-content;
+    font-size: 1.3rem;
+  }
+}
+.primary-btn:hover {
+  cursor: pointer;
+  background-color: var(--text-primary);
+}
+/* *************************************************
+********************** error **********************
+************************************************* */
+
+.errorWrapper {
+  text-align: center;
+  min-height: 100%;
+}
+.errorContainer {
+  position: relative;
+  width: 50vw;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+.errorImg {
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .errorContainer {
+    width: 80vw;
+    height: auto;
+  }
+  .errorWrapper {
+    min-height: 40vh;
+  }
+}
+
+/* *************************************************
+********************** error **********************
+************************************************* */
+
+/* *************************************************
+********************** select **********************
+************************************************* */
+.selectContainer {
+  max-width: 300px;
+  font-size: 2rem;
+}
+
+/* *************************************************
+********************** select **********************
+************************************************* */
+
+/* **************************
+********* dropdown *************
+************************** */
+
+.dropdownContainer {
+  z-index: 1;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  font-size: 1.7rem;
+  background-color: whitesmoke;
+  box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
+  -webkit-box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
+  -moz-box-shadow: -1px 5px 20px 10px rgba(157, 162, 235, 0.3);
+  padding: 2rem 3rem;
+  white-space: nowrap;
+  top: 3rem;
+  /* right: 30rem; */
+  right: 0.5rem;
+  display: none;
+}
+.dropdownContainer:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: left;
+}
+
+/* **************************
+********* dropdown *************
+************************** */
+
+/* **************************
+********* form *************
+************************** */
+
+.message {
+  text-align: left;
+  width: 100%;
+  padding: 1em;
+  font-size: 2rem;
+  color: white;
+  background-color: #f74850;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formInner {
+  padding: 2rem 3rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  /* min-height: 60vh; */
+}
+.formInner h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField,
+.address {
+  position: relative;
+}
+.inputField input,
+.inputField textarea {
+  width: 50vw;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  outline: none;
+}
+@media (max-width: 700px) {
+  .inputField input,
+  .inputField textarea {
+    width: 80vw;
+  }
+}
+.address input,
+.address textarea {
+  max-width: 400px;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  outline: none;
+}
+@media (max-width: 700px) {
+  .address input,
+  .address textarea {
+    width: 80vw;
+  }
+}
+.inputField textarea {
+  resize: none;
+  height: auto;
+  padding-top: 1rem;
+}
+.inputField textarea::-webkit-input-placeholder {
+  color: black;
+}
+.inputField textarea:-moz-placeholder {
+  color: black;
+}
+.inputField label {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 2rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.inputField input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 4px;
+  background: transparent;
+  background-color: white;
+}
+
+.inputField .active {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 4px;
+  background: transparent;
+  background-color: white;
+}
+.formText {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* **************************
+********* form *************
+************************** */

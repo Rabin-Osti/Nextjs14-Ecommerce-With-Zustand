@@ -1,0 +1,25 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  min-width: 400px;
+}
+.cartInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.summary h3 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.info {
+  display: flex;
+  border-bottom: 2px solid var(--border-light);
+  font-size: 2rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+.cartInfo .info:last-child {
+  border: none;
+}

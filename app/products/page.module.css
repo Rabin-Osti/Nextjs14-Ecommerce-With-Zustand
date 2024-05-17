@@ -1,0 +1,16 @@
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.customSelect{
+    /* border: 2px solid red; */
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+.customSelect select{
+    font-size: 2rem;
+    min-width: 300px;
+    padding: 1em;
+
+}

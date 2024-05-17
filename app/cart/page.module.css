@@ -1,0 +1,27 @@
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.cartWrapper h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+
+/* .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+} */

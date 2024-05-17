@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+}
+.navbar h1 {
+  font-size: 3rem;
+}
+.middle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.middle ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.middle li,
+.down {
+  transition: all 0.25s ease;
+}
+
+.middle li:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.icon {
+  stroke: black;
+  transition: all 0.25s ease-in-out;
+}
+.icon:hover {
+  cursor: pointer;
+  stroke: var(--primary-color);
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 800px) {
+  .middle {
+    display: none;
+  }
+  .navbar h1 {
+    font-size: 2.4rem;
+  }
+}
+
